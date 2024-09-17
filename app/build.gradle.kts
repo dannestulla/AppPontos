@@ -62,5 +62,6 @@ dependencies {
     implementation(libs.androidx.navigation)
     implementation(platform(libs.firebase))
     implementation(libs.firebase.auth)
+    implementation(libs.graph)
     debugImplementation(libs.androidx.ui.tooling)
 }

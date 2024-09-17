@@ -37,7 +37,10 @@ class MainActivity : ComponentActivity() {
                         })
                     }
                     composable("graph") {
-                        GraphScreen()
+                        GraphScreen(authService.currentUser?.email, backButton = {
+                            authService.signOut()
+                            navController.navigate("login")
+                        })
                     }
                 }
             }

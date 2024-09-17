@@ -8,6 +8,7 @@ composeBom = "2024.04.01"
 navigation = "2.8.0"
 googleServices = "4.4.2"
 firebaseBom = "33.3.0"
+graph = "v1.2.3"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -22,6 +23,7 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 androidx-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
 firebase = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom"}
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth-ktx"}
+graph = { group = "com.github.jaikeerthick", name = "Composable-Graphs", version.ref = "graph" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
