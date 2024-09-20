@@ -1,9 +1,10 @@
-package br.gohan.apppontos.components.linechart
+package br.gohan.apppontos.components.line_chart
 
 import com.jaikeerthick.composable_graphs.composables.line.model.LineData
 import kotlin.random.Random
 
 fun randomNumber() = Random.nextInt(20, 1500)
+
 val users = listOf(
     UserLineChart(
         name = "Daniel",

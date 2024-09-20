@@ -18,7 +18,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import br.gohan.apppontos.components.DropdownMenu
 import br.gohan.apppontos.ui.theme.highlightColor
 import com.jaikeerthick.composable_graphs.composables.bar.BarGraph
 import com.jaikeerthick.composable_graphs.composables.bar.model.BarData
@@ -75,8 +74,3 @@ fun BarChartProducts(modifier: Modifier = Modifier) {
         Spacer(Modifier.height(12.dp))
     }
 }
-
-data class UserBarChart(
-    val name: String,
-    val data: List<BarData>,
-)

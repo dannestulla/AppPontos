@@ -20,13 +20,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.gohan.apppontos.ui.theme.highlightColor
 import com.jaikeerthick.composable_graphs.composables.bar.BarGraph
-import com.jaikeerthick.composable_graphs.composables.bar.model.BarData
 import com.jaikeerthick.composable_graphs.composables.bar.style.BarGraphColors
 import com.jaikeerthick.composable_graphs.composables.bar.style.BarGraphFillType
 import com.jaikeerthick.composable_graphs.composables.bar.style.BarGraphStyle
 import com.jaikeerthick.composable_graphs.composables.bar.style.BarGraphVisibility
-import com.jaikeerthick.composable_graphs.composables.line.style.LineGraphColors
-import com.jaikeerthick.composable_graphs.composables.line.style.LineGraphFillType
 
 @Composable
 fun BarChartUsersScore(modifier: Modifier = Modifier) {
@@ -45,9 +42,6 @@ fun BarChartUsersScore(modifier: Modifier = Modifier) {
             fontSize = 22.sp,
             fontWeight = FontWeight.Bold
         )
-        /* DropdownMenu(usersNames) { user ->
-             userSelected = usersBarData.first { it.name == user }
-         }*/
         Spacer(Modifier.height(12.dp))
         Row {
             Text("Group : $group points", fontSize = 16.sp)

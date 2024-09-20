@@ -25,22 +25,19 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import br.gohan.apppontos.components.bar_chart_products.BarChartProducts
 import br.gohan.apppontos.components.bar_chart_score.BarChartUsersScore
-import br.gohan.apppontos.components.linechart.LineChart
+import br.gohan.apppontos.components.line_chart.LineChart
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun GraphScreen(email: String?, backButton: () -> Unit) {
     val notification = remember { SnackbarHostState() }
-    val coroutine = rememberCoroutineScope()
-    var topBarText by remember { mutableStateOf("Statistics") }
+    val topBarText by remember { mutableStateOf("Statistics") }
 
     Scaffold(
         snackbarHost = {
@@ -79,6 +76,6 @@ fun GraphScreen(email: String?, backButton: () -> Unit) {
                 BarChartUsersScore()
                 Spacer(Modifier.height(64.dp))
             }
-        })
-
+        }
+    )
 }
